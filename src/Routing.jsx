@@ -19,8 +19,9 @@ import Data from "./Context/Data";
 
 // Global Styled Component
 import GlobalStyle from "./StyledComponents/GlobalStyle";
+import NotFound404 from "./Pages/NotFound404";
 
-function App() {
+function Routing() {
   // Data
   const [data, setData] = useState([]);
   const portfolio = collection(db, "data");
@@ -47,6 +48,7 @@ function App() {
                 <Route path="skills" element={<Skills />} />
                 <Route path="portfolio" element={<Portfolio />} />
                 <Route path="lets-talk" element={<LetsTalk />} />
+                <Route path="*" element={<NotFound404 />} />
               </Route>
             </Routes>
           </div>
@@ -56,4 +58,4 @@ function App() {
   );
 }
 
-export default App;
+export default Routing;
