@@ -11,10 +11,13 @@ export default function Projects() {
   // data
   const data = useContext(Data);
   const { demos } = data.portfolio;
+  let newProject = [];
+  demos?.map((v) => newProject.unshift(v));
+
 
   return (
     <>
-      {demos.map((v, i) => (
+      {newProject.map((v, i) => (
         <Fade key={i + v}>
           <div className="project">
             <img src={v.img} alt="" />
@@ -46,8 +49,6 @@ export default function Projects() {
           </div>
         </Fade>
       ))}
-      
-      
     </>
   );
 }
