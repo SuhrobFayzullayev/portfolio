@@ -13,12 +13,14 @@ export default function SkillsDescription() {
   const { skillsDescription } = data.skills;
 
   return (
-    <div className="skills-description">
-      {skillsDescription.map((v, i) => (
-        <Fade key={i + v}>
-          <h5>{v}</h5>
-        </Fade>
-      ))}
+    <div className="my-5">
+      <div className="skills-description">
+        {skillsDescription.map((v, i) => (
+          <Fade key={i + v}>
+            <h5>{v}</h5>
+          </Fade>
+        ))}
+      </div>
     </div>
   );
 }

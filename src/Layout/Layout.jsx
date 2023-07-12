@@ -36,15 +36,23 @@ export default function Layout() {
       ) : (
         <>
           {/* Header Component */}
-          <Header />
+          <div
+            style={{
+              minHeight: "100vh",
+              display: "flex",
+              flexDirection: "column",
+            }}
+          >
+            <Header />
 
-          {/* Main Component */}
-          <Container fluid="xl">
-            <Outlet />
-          </Container>
+            {/* Main Component */}
+            <Container fluid="xl">
+              <Outlet />
+            </Container>
 
-          {/* Footer Component */}
-          <Footer />
+            {/* Footer Component */}
+            <Footer />
+          </div>
         </>
       )}
     </>
