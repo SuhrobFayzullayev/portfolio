@@ -19,9 +19,9 @@ export default function About() {
       <h1>
         <Fade>About Me</Fade>
       </h1>
-      <Row>
-        <Col className="pt-3 mb-2" md={6} lg={5} sm={6}>
-          <Slide direction="right">
+      <Row className="px-5">
+        <Col className="pt-3 mb-2" md={8}>
+          <Slide>
             <h5>{title}</h5>
             <h6>{description}</h6>
 

@@ -12,8 +12,8 @@ import { Container } from "react-bootstrap";
 
 export default function Layout() {
   // Loading state
-  const [loading, setLoading] = useState(true);
-  const [visible, setVisible] = useState(true);
+  const [loading, setLoading] = useState(false);
+  const [visible, setVisible] = useState(false);
   setTimeout(() => {
     setVisible(false);
   }, 1500);
